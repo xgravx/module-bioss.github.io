@@ -1,0 +1,72 @@
+/*****Base Styles*****/
+
+h1 {
+	font-family: Helvetica;
+	text-align: center;
+}
+
+h2 {
+	font-family: Helvetica;
+	text-align: right;
+	border: 1px solid black;
+	background-color: lightblue;
+}
+
+.content {
+	display: flex;
+}
+	
+.box {
+	background-color: lightseagreen;
+	height: 30%;
+	width: 30%;
+	border: 2px solid black;
+	margin: 12px;
+	text-align: left;
+	font-family: Arial;
+}
+
+
+
+
+
+
+ /*******Large Devices********/
+@media (min-width: 992px) {
+	.content {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.box {
+		margin: 12px;
+	}
+}
+
+/*********Medium Devices*********/
+@media (min-width: 768px) and (max-width: 991px) {
+	 .content {
+	 	display: flex;
+	 	flex-wrap: wrap;
+	 	justify-content: center;
+	 	align-items: center;
+	}
+
+	.box {
+		margin: 12px;
+		width: 300px;
+		height: 300px;
+	}
+}
+
+/************Small Devices**********/
+@media (max-width: 767px) {
+	.content {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.box {
+		margin: 12px;
+	}
+}
